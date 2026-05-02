@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="/CSS/Expense-Tracker.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="js-add-Expenses">
+            <div class="js-expense-heading">
+                <h2 class="js-new-expense">Add New Expense</h2>
+            </div>
+            <div class="js-add-expense-box">
+                <div class="js-expense-name">
+                    <p>Expense Name</p>
+                    <input class="js-expense-name-input" type="text" placeholder="Groceries">
+                </div>
+                <div class="js-expense-amount">
+                    <p>Amount</p>
+                    <input class="js-expense-amount-input" type="text" placeholder="55.00">
+                </div>
+                <div class="js-expense-add-button">
+                    <button class="js-add-expense-button" onclick="
+                            extractData()
+                        ">Add Expense</button>
+                </div>
+            </div>
+        </div>
+        <div class="js-show-added-expenses">
+            <div class="js-expense-added-heading">
+                <h2 class="js-my-expense">My Expense List</h2>
+            </div>
+            <div class="js-added-expenses-detail js-add-expense-grid">
+            </div>
+        </div>
+        <div class="js-filter-expenses">
+            <p class="js-filter-p">Filter Expense</p>
+            <input onkeydown="onClickEvent(event);" class="js-filter-input" type="text" placeholder="Show Expense above">
+            <button onclick="filterData()" class="js-filter-button">Filter</button>
+        </div>
+        <div class="js-show-total-expense">
+            <h2 class="js-total-price"></h2>
+        </div>
+    </div>
+    <script src="/JS/Expense-Tracker.js"></script>
+</body>
+</html>
