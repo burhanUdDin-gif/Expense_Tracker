@@ -9,6 +9,7 @@ function extractData(){
     const nameInputElement = document.querySelector('.js-expense-name-input');
     const nameInputValue = nameInputElement.value;
     const amountInputElement = document.querySelector('.js-expense-amount-input');
+    const myName = "Burhan Ud Din, and i am doing this change just for fun to learn the git via (vi script.js)";
 
     if(nameInputElement.value.trim() === '') return;
     if(amountInputElement.value.trim() === '') return;
